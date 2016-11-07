@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwo-Sd-Rqa">
+                                <rect key="frame" x="20" y="172.5" width="35" height="30"/>
+                                <state key="normal" title="LEFT"/>
+                                <connections>
+                                    <action selector="moveLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLl-wS-tuP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D11-Go-9pB">
+                                <rect key="frame" x="602" y="172.5" width="45" height="30"/>
+                                <state key="normal" title="RIGHT"/>
+                                <connections>
+                                    <action selector="moveRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u2M-Yx-5Io"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-r7-Eq6">
+                                <rect key="frame" x="313" y="325" width="40" height="30"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="moveBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3aE-Py-vVf"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="E77-6d-O23">
+                                <rect key="frame" x="190" y="172" width="287" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="9vz-1w-mRF"/>
+                                    <constraint firstAttribute="height" constant="30" id="CaU-hz-NKe"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="speed:" destination="BYZ-38-t0r" eventType="valueChanged" id="x3k-Do-xTf"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1k6-mh-0ur">
+                                <rect key="frame" x="312" y="43" width="43" height="30"/>
+                                <state key="normal" title="FROM"/>
+                                <connections>
+                                    <action selector="moveFrom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4m-V7-P0g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7R-0Q-08t">
+                                <rect key="frame" x="605" y="325" width="39" height="30"/>
+                                <state key="normal" title="STOP"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tK5-tV-UCT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="zwo-Sd-Rqa" secondAttribute="leading" id="1xh-e8-jdk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OF2-r7-Eq6" secondAttribute="bottom" constant="20" id="4iP-tL-6RD"/>
+                            <constraint firstItem="1k6-mh-0ur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4pf-yy-yPV"/>
+                            <constraint firstItem="D11-Go-9pB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6RX-HB-33f"/>
+                            <constraint firstItem="1k6-mh-0ur" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="ADx-e8-fZn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J7R-0Q-08t" secondAttribute="bottom" constant="20" id="I4y-aX-KTF"/>
+                            <constraint firstItem="zwo-Sd-Rqa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Obw-NZ-dB7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J7R-0Q-08t" secondAttribute="trailing" constant="3" id="Pxh-j5-7nW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D11-Go-9pB" secondAttribute="trailing" id="Req-eW-kew"/>
+                            <constraint firstItem="OF2-r7-Eq6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T5I-cS-nvY"/>
+                            <constraint firstItem="E77-6d-O23" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lM9-4h-tFq"/>
+                            <constraint firstItem="E77-6d-O23" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wzG-Ww-jlQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="speedSlider" destination="E77-6d-O23" id="vw2-OA-rxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.59220389805098" y="104.8"/>
+        </scene>
+    </scenes>
+</document>
