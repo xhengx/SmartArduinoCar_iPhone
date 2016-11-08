@@ -67,6 +67,18 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tK5-tV-UCT"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yLE-k0-bft">
+                                <rect key="frame" x="595" y="43" width="51" height="31"/>
+                                <connections>
+                                    <action selector="moveAuto:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dyo-qC-nAa"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="壁障行驶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x2-IV-P1Q">
+                                <rect key="frame" x="529" y="50" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -74,12 +86,16 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OF2-r7-Eq6" secondAttribute="bottom" constant="20" id="4iP-tL-6RD"/>
                             <constraint firstItem="1k6-mh-0ur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4pf-yy-yPV"/>
                             <constraint firstItem="D11-Go-9pB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6RX-HB-33f"/>
+                            <constraint firstItem="yLE-k0-bft" firstAttribute="leading" secondItem="8x2-IV-P1Q" secondAttribute="trailing" constant="8" id="8yV-eL-qc0"/>
                             <constraint firstItem="1k6-mh-0ur" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="ADx-e8-fZn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yLE-k0-bft" secondAttribute="trailing" constant="3" id="BtI-tx-v8G"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J7R-0Q-08t" secondAttribute="bottom" constant="20" id="I4y-aX-KTF"/>
                             <constraint firstItem="zwo-Sd-Rqa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Obw-NZ-dB7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J7R-0Q-08t" secondAttribute="trailing" constant="3" id="Pxh-j5-7nW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D11-Go-9pB" secondAttribute="trailing" id="Req-eW-kew"/>
                             <constraint firstItem="OF2-r7-Eq6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T5I-cS-nvY"/>
+                            <constraint firstItem="8x2-IV-P1Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="XZp-Hn-gs9"/>
+                            <constraint firstItem="yLE-k0-bft" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="gkv-1o-V9z"/>
                             <constraint firstItem="E77-6d-O23" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lM9-4h-tFq"/>
                             <constraint firstItem="E77-6d-O23" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wzG-Ww-jlQ"/>
                         </constraints>

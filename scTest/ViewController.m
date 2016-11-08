@@ -53,6 +53,10 @@
 - (IBAction)stop:(id)sender {
     [self sendControl:@"stop"];
 }
+- (IBAction)moveAuto:(UISwitch *)sender {
+    [self sendControl:@"auto"];
+}
+
 
 - (IBAction)speed:(UISlider *)sender {
     
